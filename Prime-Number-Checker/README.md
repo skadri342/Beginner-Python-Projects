@@ -1,0 +1,1 @@
+This was a simple program I created to check if a number is a prime number or not. This program can be improved a lot more, but I am just getting used to programming and thinking logically so this was my best attempt at coding a prime number checker.
