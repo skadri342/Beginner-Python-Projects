@@ -1,0 +1,3 @@
+Made a super simple encrypting and decodign program using what I have learned about lists, functions, while loops, and for loops.
+At first I had two functions but then I condensed the code into one function because the code in both of the functions were basically the same except for one line.
+But putting it into one function was kind of challenging because then it introduced some bugs. I was able to fix those bugs using the Thonny debugger.
