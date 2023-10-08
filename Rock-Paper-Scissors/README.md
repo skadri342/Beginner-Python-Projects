@@ -1,0 +1,1 @@
+Beginner python program. This time made a very simple rock paper scissors game against the computer. Learned to use randomisation, lists, and nested lists.
