@@ -1,0 +1,1 @@
+Beginner python program. This time was just learning about conditional statements, modulo, nested statements and logical operators.
