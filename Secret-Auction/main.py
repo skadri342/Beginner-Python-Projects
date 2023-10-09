@@ -34,3 +34,4 @@ while auction_end == False:
             os.system("cls")
             break
 auction_winner()
+os.system("pause")
