@@ -1,10 +1,5 @@
 ############## Blackjack Project #####################
 
-#Difficulty Normal 😎: Use all Hints below to complete the project.
-#Difficulty Hard 🤔: Use only Hints 1, 2, 3 to complete the project.
-#Difficulty Extra Hard 😭: Only use Hints 1 & 2 to complete the project.
-#Difficulty Expert 🤯: Only use Hint 1 to complete the project.
-
 ############### Our Blackjack House Rules #####################
 
 ## The deck is unlimited in size. 
@@ -17,19 +12,6 @@
 ## Cards are not removed from the deck as they are drawn.
 ## The computer is the dealer.
 
-##################### Hints #####################
-
-#Hint 1: Go to this website and try out the Blackjack game: 
-#   https://games.washingtonpost.com/games/blackjack/
-#Then try out the completed Blackjack project here: 
-#   http://blackjack-final.appbrewery.repl.run
-
-#Hint 2: Read this breakdown of program requirements: 
-#   http://listmoz.com/view/6h34DJpvJBFVRlZfJvxF
-#Then try to create your own flowchart for the program.
-
-#Hint 3: Download and read this flow chart I've created: 
-#   https://drive.google.com/uc?export=download&id=1rDkiHCrhaf9eX7u7yjM1qwSuyEk-rPnt
 import random
 import os
 from art import logo
@@ -47,3 +29,11 @@ computer_cards = []
 for _ in range(2):
     user_cards.append(deal_card())
     computer_cards.append(deal_card())
+    
+def calculate_score(list):
+    if 11 in list and 10 in list:
+        return 0
+    elif 11 in list and sum(list) > 21:
+        list.remove(11)
+        list.append(1)
+    return sum(list)
