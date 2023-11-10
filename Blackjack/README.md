@@ -1,0 +1,1 @@
+This is my Blackjack game. Made a kind of hard project using concepts that I have previously learned. These are the basic fundamental concepts. Used things like while loops, for loops, functions, recursion.
