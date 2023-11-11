@@ -1,1 +1,1 @@
-By making this guessing game, I am learnt the concept of what scope is properly such as local scope and global scope. 
+By making this guessing game, I am learnt the concept of what scope is properly such as local scope and global scope. Also learning to use functions instead of using while loops everytime. I have to learn to use functions more often rather than writing repeating code all the time.
