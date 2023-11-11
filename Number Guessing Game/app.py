@@ -21,17 +21,22 @@ def check_answer(guess, number):
     else:
         print(f"You got it! The answer was {number}")
 
-print(logo)
-print("Welcome to the Number Guessing Game!")
-print("I'm thinking of a number between 1 and 100.")
-number = random.randint(1, 100)
-number_of_attempts = set_difficulty()
-guess = 0
-# Let user guess a number
-while guess != number:
-    print(f"You have {number_of_attempts} attempts remaining to guess the number.")
-    guess = int(input("Make a guess: "))
-    check_answer(guess, number)
-    number_of_attempts -= 1
-    if number_of_attempts == 0:
-        print("You've run out of guesses, you lose.")
+def game():
+    print(logo)
+    print("Welcome to the Number Guessing Game!")
+    print("I'm thinking of a number between 1 and 100.")
+    number = random.randint(1, 100)
+    number_of_attempts = set_difficulty()
+    guess = 0
+    # Let user guess a number
+    while guess != number:
+        print(f"You have {number_of_attempts} attempts remaining to guess the number.")
+        guess = int(input("Make a guess: "))
+        check_answer(guess, number)
+        number_of_attempts -= 1
+        if number_of_attempts == 0:
+            return print("You've run out of guesses, you lose.")
+        elif guess!= number:
+            print("Guess again")
+
+game()
