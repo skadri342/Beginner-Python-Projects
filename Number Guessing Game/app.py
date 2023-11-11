@@ -5,7 +5,7 @@ EASY_LEVEL_TURNS = 10
 HARD_LEVEL_TURNS = 5
 
 def set_difficulty():
-    level = input("Choose a difficulty. Type 'easy' or 'hard': ")
+    level = input("Choose a difficulty. Type 'easy' or 'hard': ").lower()
     if level == "easy":
         return EASY_LEVEL_TURNS
     elif level == "hard":
@@ -20,6 +20,16 @@ def check_answer(guess, number):
         print("Too low.")
     else:
         print(f"You got it! The answer was {number}")
+        restart()
+        
+def restart():
+    while True:
+        restart = input("Do you want to play again? Type 'yes' or 'no': ").lower()
+        if restart == "yes":
+            game()
+        elif restart == "no":
+            print("Goodbye")
+            break
 
 def game():
     print(logo)
@@ -35,7 +45,8 @@ def game():
         check_answer(guess, number)
         number_of_attempts -= 1
         if number_of_attempts == 0:
-            return print("You've run out of guesses, you lose.")
+            print("You've run out of guesses, you lose.")
+            return restart()
         elif guess!= number:
             print("Guess again")
 
